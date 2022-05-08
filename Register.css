@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(116, 112, 112);
+  background-size: cover;
+  background-position: bottom;
+  background-image: url("coffee.jpg");
+
+}
+.loginbox {
+  height: 525px;
+  width: 400px;
+  background: white;
+  color: black;
+  margin-top: 30px;
+  margin-left: 35%;
+  position: absolute;
+  border-radius: 50px;
+}
+.loginbox h1 {
+  margin: 0px;
+  padding: 20px;
+  font-family: "Times New Roman", Times, serif;
+  margin-left: 130px;
+  text-decoration: underline;
+
+}
+.loginbox h3 {
+  margin-left: 120px;
+  padding: 0px;
+  font-style: italic;
+}
+
+.loginbox h4 {
+  margin-left: 80px;
+  padding: 0px;
+  font-style: italic;
+}
+
+.loginbox input {
+  margin-left: 50px;
+}
+
+.loginbox input[type="text"],
+input[type="password"],
+input[type="email"],
+button[type="submit"] {
+  box-sizing: border-box;
+  padding-left: 5px;
+  width: 300px;
+  height: 25px;
+  box-sizing: content-box;
+  font-style: italic;
+
+}
+.loginbox select {
+  margin-left: 50px;
+  font-style: italic;
+}
+
+.loginbox button[type="submit"] {
+  background: green;
+  color: white;
+  margin-left: 50px;
+  font-size: 15px;
+}

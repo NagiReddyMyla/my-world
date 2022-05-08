@@ -1,0 +1,26 @@
+function validate() {
+  const first = document.getElementById("first name");
+  const last = document.getElementById("last name");
+  const email = document.getElementById("email");
+  const pass = document.getElementById("password");
+  const confirmpass = document.getElementById("confirm password");
+  let regx =
+    /^([a-z A-Z 0-9 - \.]+)@([a-z 0-9]+)\.([a-z]{2,10})(\. [a-z]{2,10})?$/;
+  if (regx.test(email.value)==false) {
+    alert("Not a valid email");
+    return false;
+  }
+  if (first.value.trim() == "" || last.value.trim() == "") {
+    alert("No blank values are allowed");
+    return false;
+  }
+  if (pass.value.length < 6) {
+    alert("password should be greater than 6 char");
+    return false;
+  }
+  if (pass.value != confirmpass.value) {
+    alert("Password does not match");
+    return false;
+  }
+}
+validate();
